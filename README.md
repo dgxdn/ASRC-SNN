@@ -1,3 +1,5 @@
+## ASRC-SNN: Adaptive Skip Recurrent Connection Spiking Neural Network
+![本地图片](ASRC-SNN.png)
 ### Dependencies
 To install the required packages, refer to [`requirements.txt`](requirements.txt).
 
