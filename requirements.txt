@@ -1,0 +1,12 @@
+cuda 12.6
+python 3.8.19
+torch 1.9.1
+torchvision 0.10.1
+numpy 1.24.4
+spikingjelly 0.0.0.0.14 
+urllib3 2.2.1
+librosa 0.7.1
+werkzeug 3.0.3
+h5py 3.11.0
+prettytable 3.10.2
+tensorboard 2.14.0

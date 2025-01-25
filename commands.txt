@@ -1,0 +1,14 @@
+python main.py --task GSC --model-version SRC --layers 128 128 128 --batch-size 128 --skip 4 4 4 --lr 0.0025  --epoch 100 --drop 0.1 --bias
+python main.py --task GSC --model-version ASRC --layers 128 128 128 --batch-size 128 --skip 21 21 21 --lr 0.0025 --lr-skip 0.25 --epoch 100 --drop 0.1 --bias
+
+python main.py --task SSC --model-version SRC --layers 256 256 256 --batch-size 128 --skip 3 3 3 --lr 0.001  --epoch 100 --drop 0.1 --bias
+python main.py --task SSC --model-version ASRC --layers 256 256 256 --batch-size 128 --skip 6 6 6 --lr 0.001 --lr-skip 0.1 --epoch 100 --drop 0.1 --bias
+
+python main.py --task SMNIST --model-version SRC --layers 64 128 128 --batch-size 256 --skip 16 16 16 --lr 0.001 --epoch 200 --optim adamw --wd 0.01 --bias
+python main.py --task SMNIST --model-version SRC --layers 64 212 212 --batch-size 256 --skip 12 12 12 --lr 0.001 --epoch 200 --optim adamw --wd 0.01 --bias
+python main.py --task SMNIST --model-version ASRC --layers 64 128 128 --batch-size 256 --skip 41 41 41 --lr 0.001 --lr-skip 0.1 --epoch 200 --optim adamw --wd 0.01 --bias
+
+python main.py --task PSMNIST --model-version SRC --layers 64 128 128 --batch-size 256 --skip 12 12 12 --lr 0.001 --epoch 200 --optim adamw --wd 0.01 --bias
+python main.py --task PSMNIST --model-version SRC --layers 64 212 212 --batch-size 256 --skip 16 16 16 --lr 0.001 --epoch 200 --optim adamw --wd 0.01 --bias
+python main.py --task PSMNIST --model-version ASRC --layers 64 128 128 --batch-size 256 --skip 51 51 51 --lr 0.001 --lr-skip 0.1 --epoch 200 --optim adamw --wd 0.01 --bias
+python main.py --task PSMNIST --model-version ASRC --layers 64 212 212 --batch-size 256 --skip 31 31 31 --lr 0.001 --lr-skip 0.1 --epoch 200 --optim adamw --wd 0.01 --bias
