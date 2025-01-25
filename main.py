@@ -55,7 +55,7 @@ def train(train_loader, model, criterion, optimizer, epoch, args,  writer, perm)
     visualize_weight_norms(model, writer, epoch, args)
     log_tau(model, writer, epoch)
     #visualize skip
-    if args.model_version == 'v2':
+    if args.model_version == 'ASRC':
         cnt = 4 if (args.use_batchnorm or args.use_layernorm) else 3
         for i in range(len(args.layers)):
             temp = torch.nn.functional.softmax(model.features[cnt * (i + 1) - 1].skip_para / model.features[cnt * (i + 1) - 1].tau, dim = 0)
