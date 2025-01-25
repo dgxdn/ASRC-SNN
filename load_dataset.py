@@ -11,7 +11,7 @@ from torch.utils.data import Dataset
 from GSC import google12_v2
 '''
 args.dataset_dir/
-├── PSMNIST/
+├── MNIST/
 ├── google_speech_command_2/
 └── SSC/
 '''
