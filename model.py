@@ -132,7 +132,7 @@ def generate_neuron(args):
         node = GatedLIFNode
     else:
         raise NotImplementedError
-    # initialize the learnable betas
+    
     if args.neuron == 'glif':
         spiking_neuron = partial(node,
                             surrogate_function=SG.apply,
